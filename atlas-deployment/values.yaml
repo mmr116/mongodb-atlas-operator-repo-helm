@@ -17,9 +17,9 @@ atlas:
     # secret already exist in the same namespace
     existing: ""
 
-    orgId: "<Atlas Organization ID>"
-    publicApiKey: "<Atlas_api_public_key>"
-    privateApiKey: "<Atlas_api_private_key>"
+    orgId: "636274618f1d6a1212594495"
+    publicApiKey: "vvimhpok"
+    privateApiKey: "7f9d64d1-1adf-44a5-b7cb-a6f45f30ee30"
     # use custom secret name during new secret creation
     setCustomName: ""
 
@@ -34,14 +34,14 @@ project:
 
   projectIpAccessList:
     - ipAddress: "0.0.0.0/1"
-      comment: "REMOVE ME"
+      comment: "Allowed only for demo"
 
 # include either deploymentSpec or advancedDeploymentSpec
 # see https://docs.atlas.mongodb.com/reference/api/cluster-advanced/create-one-cluster-advanced/ for
 # options for creating advanced clusters.
 deployments:
   - deploymentSpec:
-      name: cluster-name
+      name: test-cluster-009
       annotations: {}
         # mongodb.com/atlas-resource-policy: keep
       providerSettings:
